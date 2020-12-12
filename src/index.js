@@ -173,8 +173,6 @@ const intitialState = {
 
 const store = createStore(reducer, intitialState);
 
-const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
-
 ReactDOM.render(
     <Provider store={store}>
         <App />
